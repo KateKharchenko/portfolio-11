@@ -1,0 +1,39 @@
+.section {
+    background-color: $white;
+    &--lg {
+        padding: 90px 0 180px;
+        @include madia (768px) {
+            padding: 30px 0;
+        }
+    }
+    
+    &__title {
+        @include madia (320px) {
+            font-size: 4rem;
+        }
+    }
+    .gallery-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .gallery {
+            position: relative;
+            width: calc(33% - 2 * 15px);
+            height: 280px;
+            margin: 15px;
+            padding: 15px;
+            overflow: hidden;
+            background-color: #f4f4f4;
+            border-radius: 15px;
+            @include madia (576px) {
+               width: 100%;
+            }
+            &__img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }   
+}
