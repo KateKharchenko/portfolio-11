@@ -1,0 +1,23 @@
+.footer{
+    background-color: $title-color;
+    color: $white;
+    padding: 90px 0;
+
+    &__row{
+        display: flex;
+        justify-content: center;
+        align-items: center ;
+    }
+
+    &__text {
+        line-height: 1.2;
+        padding-right: 30px;
+        font-size: 5rem;   
+    }
+    
+
+    & .btn {
+        flex: 1 0 auto;
+    }
+}
+

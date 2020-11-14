@@ -32,11 +32,15 @@ body {
 h1 {
     font-size: 5rem;
     text-transform: uppercase;
+   
 }
 
 h2 {
     font-size: 5rem;
     font-weight: 300;
+    text-align: center;
+    color: $title-color;
+    margin: 0 0 60px 0;
 }
 
 h3 {
