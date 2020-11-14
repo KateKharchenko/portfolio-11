@@ -1,0 +1,50 @@
+@import 'normalize';
+@import 'mixins';
+@import 'variables';
+
+@import 'header';
+@import 'about-us';
+@import 'expert-in';
+@import 'latest-works';
+@import 'clients';
+@import 'footer';
+@import 'nav';
+@import 'modal';
+
+* {
+    box-sizing: border-box;
+}
+
+a, button {
+    transition: all .3s ease-in-out;
+}
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font: 400 1.6rem/2 $text-ff;
+}
+
+h1 {
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 5rem;
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 2.4rem;
+    text-transform: uppercase;
+}
+
+.container {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
