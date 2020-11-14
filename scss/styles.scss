@@ -39,7 +39,7 @@ h2 {
     font-weight: 300;
     text-align: center;
     color: $title-color;
-    @include screen($w576) {
+    @include media($w576) {
         font-size: 3rem;
         line-height: 1;
     }
