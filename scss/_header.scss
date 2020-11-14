@@ -1,0 +1,131 @@
+.header
+{
+    color: $white;
+    text-align: center;
+    min-height: 100vh;
+    padding: 90px 0;
+    position: relative;
+    &__info
+    {
+        max-width: 80%;
+
+        margin: 40px auto;
+    }
+    &__picture
+    {
+        margin: 0 auto;
+        text-align: center;
+        width: 15%;
+        padding-top: 15%;
+        position: relative;
+        overflow: hidden;
+        background-color: #4793fe;
+        border-radius: 50%;
+
+    }
+    &__img
+    {
+       width: 90%;
+      height : 90%;
+       position: absolute;
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        border: 6px solid #5397fe;
+        transform: translate(-50%, -50%);  
+    }
+    &__text
+    {
+       text-transform: uppercase;
+       font-weight: 300;
+       margin-bottom: 70px;
+    }
+    
+}
+@media screen and (max-width: 992px)
+{
+    .header{
+        padding: 70px 0;
+        &__picture
+        {
+            width: 20%;
+            padding-top: 20%;
+        }
+       
+        &__text
+        {
+            font-size: 1.4rem;
+        }
+    }
+}
+@media screen and (max-width: 576px)
+{
+    .header{
+        padding: 50px 0;
+        &__picture
+        {
+            width: 30%;
+            padding-top: 30%;
+        }
+       
+        &__text
+        {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+        }
+    }
+}
+@media screen and (max-width: 320px)
+{
+    
+    .header{
+        
+        &__picture
+        {
+            width: 40%;
+            padding-top: 40%;
+        }
+       
+        &__text
+        {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+    }
+    .scroll
+    {
+        bottom: -60px;
+    }
+}
+.gradient   
+    {
+        background: linear-gradient(45deg, #3695ff, #3695ff 16%, #469dff 16%, #469cff 32%, #4099ff 32%, #4093ff 48%, #3c91ff 48%, #3c8cfe 66%, #3c89fe 66%, #3684fe);
+    }
+#toggler-input
+{
+    display: none;
+}
+#toggler 
+{
+    display: block;
+    z-index: 11;
+    position: fixed;
+    right: 15px;
+    top: 15px;
+    svg
+    {
+        fill: $white;
+    }
+}
+
+.scroll
+{   position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    svg
+    {
+        fill: $white;
+        opacity: .4;
+    }
+}

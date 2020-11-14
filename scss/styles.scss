@@ -33,12 +33,42 @@ body {
 h1 {
     font-size: 5rem;
     text-transform: uppercase;
+    margin: 35px 0;
+    line-height: 1.2;
 }
-
+@media screen and (max-width: 992px)
+{
+    h1
+    {
+        font-size: 4rem;
+        margin: 30px 0;
+    }
+}
+@media screen and (max-width: 576px)
+{
+    h1
+    {
+        font-size: 3rem;
+        margin: 25px 0;
+    }
+}
+@media screen and (max-width: 320px)
+{
+    h1
+    {
+        font-size: 2.4rem;
+        margin: 20px 0;
+    }
+}
 h2 {
     font-size: 5rem;
     font-weight: 300;
     text-align: center;
+<<<<<<< HEAD
+=======
+    color: $title-color;
+    margin: 0 0 60px 0;
+>>>>>>> 302da37f6cb90c8fc95bd2a3f39f64ba88560f5c
 }
 
 h3 {
