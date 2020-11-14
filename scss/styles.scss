@@ -4,6 +4,7 @@
 
 @import 'header';
 @import 'about-us';
+@import '_about-us-mironenko';
 @import 'expert-in';
 @import 'latest-works';
 @import 'clients';
@@ -37,6 +38,7 @@ h1 {
 h2 {
     font-size: 5rem;
     font-weight: 300;
+    text-align: center;
 }
 
 h3 {
