@@ -35,6 +35,9 @@
         font-size: 4rem;
     }
 }
+#toggler, #toggler-input{
+    display: none;
+}
 #toggler{
     display: block;
     position: absolute;
