@@ -6,9 +6,53 @@
     <title>BA Portfolio</title>
     <link rel="shortcut icon" href="favicon.png" type="image/png">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/25fc6d5683.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
-    <button class="btn">Test</button>
-    <button class="btn btn--sm">Test</button>
+    <div class="container">
+        <input type="checkbox" name="toggler-input" id="toggler-input">
+        <label id="toggler" for="toggler-input">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <nav class="navi">
+            <ul class="navi__items">
+                <li class="navi__item"><a href="#about" onclick="closeMenu()">About Me</a></li>
+                <li class="navi__item"><a href="#services" onclick="closeMenu()">Services</a></li>
+                <li class="navi__item"><a href="#my-works" onclick="closeMenu()">My Works</a></li>
+                <li class="navi__item"><a href="#clients" onclick="closeMenu()">Clients</a></li>
+            </ul>
+            <ul class="socials">
+                <li class="social">
+                    <a href="#" class="social__link"><i class="fab fa-facebook-f"></i>
+        
+                        </a>
+                    </li>
+                <li class="social">
+                    <a href="#" class="social__link"><i class="fab fa-twitter"></i>
+        
+                        </a>
+                    </li>
+                <li class="social">
+                    <a href="#" class="social__link"><i class="fab fa-google-plus-g"></i>
+        
+                        </a>
+                    </li>
+                <li class="social">
+                    <a href="#" class="social__link"><i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+            </ul>
+        </nav>
+    </div>
+
+    <script>
+        function closeMenu(){
+            document.querySelector('#toggler').click();
+        }
+    </script>
 </body>
 </html>
