@@ -7,10 +7,43 @@
     <title>BA Portfolio</title>
     <link rel="shortcut icon" href="favicon.png" type="image/png">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/25fc6d5683.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
     <header class="header gradient">
+        <input type="checkbox" name="toggler-input" id="toggler-input">
+        <label id="toggler" for="toggler-input">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <nav class="navi">
+            <ul class="navi__items">
+                <li class="navi__item"><a href="#about" onclick="closeMenu()">About Me</a></li>
+                <li class="navi__item"><a href="#services" onclick="closeMenu()">Services</a></li>
+                <li class="navi__item"><a href="#my-works" onclick="closeMenu()">My Works</a></li>
+                <li class="navi__item"><a href="#clients" onclick="closeMenu()">Clients</a></li>
+            </ul>
+            <ul class="socials">
+                <li class="social">
+                    <a href="#" class="social__link" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li class="social">
+                    <a href="#" class="social__link" target="_blank"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li class="social">
+                    <a href="#" class="social__link" target="_blank"><i class="fab fa-google-plus-g"></i></a>
+                </li>
+                <li class="social">
+                    <a href="#" class="social__link" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
         <div class="container">
 
             <div class="header__picture">
@@ -33,7 +66,7 @@
         </div>
     </header>
 
-    <section class="section">
+    <section class="section" id="about">
         <div class="container">
             <div class="section__wrap section__wrap--about">
                 <h2 class="section__title">About Me</h2>
@@ -129,6 +162,12 @@
                 d="m368 277.332031h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0" />
         </symbol>
     </svg>
+
+    <script>
+        function closeMenu(){
+            document.querySelector('#toggler').click();
+        }
+    </script>
 </body>
 
 </html>
