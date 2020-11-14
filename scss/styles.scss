@@ -11,6 +11,7 @@
 @import 'nav';
 @import 'modal';
 @import 'btns';
+@import 'pasha';
 
 * {
     box-sizing: border-box;
@@ -37,11 +38,14 @@ h1 {
 h2 {
     font-size: 5rem;
     font-weight: 300;
+    color: $title-color;
 }
 
 h3 {
     font-size: 2.4rem;
     text-transform: uppercase;
+    color: $title-color;
+    font-weight: 700;
 }
 
 .container {

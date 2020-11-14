@@ -1,0 +1,48 @@
+.expert {
+  background-color: $blue;
+  text-align: center;
+  color: #5a5a5a;
+  padding: 90px 0 100px;
+  @media screen and (max-width: 576px) {
+    padding: 45px 0 50px;
+  }
+  &__title {
+    color: $title-color;
+    margin: 0;
+  }
+  &__blocks {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @media screen and (max-width: 992px) {
+      justify-content: center;
+    }
+  }
+  &__block {
+    width: calc(33% - 20px * 2);
+    margin: 100px 20px 0;
+    @media screen and (max-width: 992px) {
+      width: calc(50% - 20px * 2);
+      margin: 50px 20px 0;
+    }
+    @media screen and (max-width: 576px) {
+      width: calc(100% - 20px * 2);
+      margin: 20px 20px 0;
+    }
+  }
+  &__icon {
+    border-radius: 50%;
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    border: $b-width solid #000;
+    justify-content: center;
+    align-items: center;
+  }
+  &__svg {
+    fill: $title-color;
+    max-width: 50%;
+    max-height: 50%;
+  }
+}
