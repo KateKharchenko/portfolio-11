@@ -1,0 +1,20 @@
+.btn {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $title-color;
+    background-color: $white;
+    border: $b-width solid $white;
+    font-size: 1.6rem;
+    padding: 1.25em 4.6em;
+    border-radius: 2em;
+
+    @include hover {
+        color: $white;
+        background-color: transparent;
+    }
+    &--sm {
+        color: $dark-blue;
+        font-size: 1.2rem;
+        padding: 1.1em 3.3em;
+    }
+}
