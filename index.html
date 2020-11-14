@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +10,9 @@
     <script src="https://kit.fontawesome.com/25fc6d5683.js" crossorigin="anonymous"></script>
 
 </head>
+
 <body>
+<<<<<<< HEAD
     <div class="container">
         <input type="checkbox" name="toggler-input" id="toggler-input">
         <label id="toggler" for="toggler-input">
@@ -47,5 +50,35 @@
             document.querySelector('#toggler').click();
         }
     </script>
+=======
+
+
+
+    <div class="hire-me-pop-up">
+        <input id="close" type="checkbox">
+        <label class="close" for="close">
+            <svg viewBox="0 0 329.26933 329" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0" />
+            </svg>
+        </label>
+
+        <div class="wrap">
+            <div class="modal">
+                <div class="modal__title">Hire Me</div>
+                <form action="" class="modal__form" autocomplete="off" method="POST">
+                    <input type="text" name="user-name" id="user-name" placeholder="Your Name" required>
+                    <input type="email" name="user-email" id="user-email" placeholder="Your E-Mail" required>
+                    <textarea name="user-comment" id="user-comment" placeholder="Your Message" cols="30"
+                        rows="10"></textarea>
+                    <label for="user-submit">
+                        <input class="btn btn--sm btn--modal" value="SEND MESSAGE" id="user-submit" type="submit">
+                    </label>
+                </form>
+            </div>
+        </div>
+    </div>
+>>>>>>> 56bcc4c1a2e61c172860913c078af80a6d7d4b70
 </body>
+
 </html>

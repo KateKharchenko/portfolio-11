@@ -1,0 +1,93 @@
+.hire-me-pop-up {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   z-index: 100;
+
+   @media screen and (max-width: 768px) {
+      top: 0;
+      font-size: 2.2rem;
+   }
+   .close {
+      position: absolute;
+      top: 20px;
+      right: -380px;
+      z-index: 100;
+      @media screen and (max-width: 768px) {
+         top: 20px;
+         left: 0;
+      }
+      svg {
+         width: 22px;
+         height: 22px;
+         fill: $title-color;
+      }
+   }
+
+   #close {
+      display: none;
+   }
+   #close:checked ~ .wrap {
+      display: none;
+   }
+   #close:checked ~ label {
+      display: none;
+   }
+
+   .wrap {
+      width: 810px;
+      background-color: $white;
+      border-radius: 10px;
+      padding: 35px 140px 60px;
+      transition: all 0.5s ease-in;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, 0);
+   }
+
+   .modal {
+      color: $white;
+      text-align: center;
+
+      &__title {
+         color: $title-color;
+         font-size: 5rem;
+         line-height: 1.96;
+      }
+
+      input,
+      textarea {
+         display: block;
+         width: 100%;
+
+         &::placeholder {
+            font-size: 1.6rem;
+            color: #b7c0c9;
+         }
+         border: 2px solid #b7c0c9;
+         border-radius: 8px;
+         margin: 7px 0;
+         padding: 15px 20px;
+      }
+   }
+
+   #user-submit {
+      width: calc(25% + (14px * 2) + (40px * 2));
+      margin: 38px auto 0;
+   }
+
+   .btn--modal {
+      background-color: $title-color;
+      color: $white;
+      font-size: 1.6rem;
+      border: 2px solid transparent;
+      transition: all 0.3s ease-in;
+      &:hover,
+      &:active,
+      &:focus {
+         border-color: $title-color;
+         color: $title-color;
+      }
+   }
+}
