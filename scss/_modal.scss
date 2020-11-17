@@ -1,0 +1,116 @@
+.hire-me-pop-up {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   z-index: 100;
+   transform: translate(-50%, -50%);
+   width: 810px;
+
+   @media screen and (max-width: 768px) {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 2.2rem;
+      width: 100%;
+      height: 100vh;
+   }
+   .close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 100;
+
+      transition: all 0.3s ease-in;
+      &:hover,
+      &:active,
+      &:focus {
+         transform: scale(1.3);
+      }
+
+      svg {
+         width: 22px;
+         height: 22px;
+         fill: $title-color;
+
+         @media screen and (max-width: 768px) {
+            width: 40px;
+            height: 40px;
+         }
+      }
+   }
+
+   #close {
+      display: none;
+
+   }
+   #close:checked ~ .wrap {
+      display: none;
+      transform: translate(-200%, -200%);
+   }
+   #close:checked ~ label {
+      display: none;
+
+   }
+
+   .wrap {
+      width: 100%;
+      background-color: $white;
+      border-radius: 10px;
+      padding: 35px 140px 60px;
+      transition: all 0.5s ease-in;
+
+      @media screen and (max-width: 768px) {
+         border-radius: 0;
+         padding: 25px 80px 40px;
+      }
+      @media screen and (max-width: 576px) {
+         border-radius: 0;
+         padding: 15px 30px 20px;
+      }
+   }
+
+   .modal {
+      color: $white;
+      text-align: center;
+
+      &__title {
+         color: $title-color;
+         font-size: 5rem;
+         line-height: 1.96;
+      }
+
+      input,
+      textarea {
+         display: block;
+         width: 100%;
+
+         &::placeholder {
+            font-size: 1.6rem;
+            color: #b7c0c9;
+         }
+         border: 2px solid #b7c0c9;
+         border-radius: 8px;
+         margin: 7px 0;
+         padding: 15px 20px;
+      }
+   }
+
+   #user-submit {
+      width: calc(25% + (14px * 2) + (40px * 2));
+      margin: 38px auto 0;
+   }
+
+   .btn--modal {
+      background-color: $title-color;
+      color: $white;
+      font-size: 1.6rem;
+      border: 2px solid transparent;
+      transition: all 0.3s ease-in;
+      &:hover,
+      &:active,
+      &:focus {
+         border-color: $title-color;
+         color: $title-color;
+      }
+   }
+}
