@@ -44,7 +44,7 @@
     right: 15px;
     top: 15px;
     width: 42px;
-    height: 36px;
+    height: 42px;
     z-index: 11;
 }
 #toggler-input:checked ~ #toggler{
@@ -65,7 +65,7 @@
     box-shadow: 0 0 3px rgba(0,0,0, .5);
     position: absolute;
     left: 15%;
-    transform: translate(-50%, -2px);
+    transform: translate(-20%, 0);
     transition: all .3s ease-in-out;
 }
 #toggler span:nth-child(1){
@@ -78,7 +78,7 @@
     top: 100%;
 }
 #toggler-input:checked ~ #toggler span:nth-child(1){
-    transform: translate(-50%, 18px) rotate(45deg); 
+    transform: translate(-20%, 21px) rotate(45deg); 
     background-color: $title-color;
     box-shadow: none;
 }
@@ -87,7 +87,7 @@
     
 }
 #toggler-input:checked ~ #toggler span:nth-child(3){
-    transform: translate(-50%, -18px) rotate(-45deg); 
+    transform: translate(-20%, -21px) rotate(-45deg); 
     background-color: $title-color;
     box-shadow: none;
 }

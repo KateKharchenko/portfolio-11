@@ -7,9 +7,9 @@
    width: 810px;
 
    @media screen and (max-width: 768px) {
-      top: 0;
-      left: 0;
-      transform: translate(0, 0);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       font-size: 2.2rem;
       width: 100%;
       height: 100vh;
@@ -41,12 +41,15 @@
 
    #close {
       display: none;
+
    }
    #close:checked ~ .wrap {
       display: none;
+      transform: translate(-200%, -200%);
    }
    #close:checked ~ label {
       display: none;
+
    }
 
    .wrap {
