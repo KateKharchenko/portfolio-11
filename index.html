@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,90 @@
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://kit.fontawesome.com/9763e3f958.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
+    
+    <header class="header gradient">
+        <input type="checkbox" name="toggler-input" id="toggler-input">
+        <label id="toggler" for="toggler-input">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <nav class="navi">
+            <ul class="navi__items">
+                <li class="navi__item"><a href="#about" onclick="closeMenu()">About Me</a></li>
+                <li class="navi__item"><a href="#services" onclick="closeMenu()">Services</a></li>
+                <li class="navi__item"><a href="#my-works" onclick="closeMenu()">My Works</a></li>
+                <li class="navi__item"><a href="#clients" onclick="closeMenu()">Clients</a></li>
+            </ul>
+            <ul class="socials">
+                <li class="social">
+                    <a href="#" class="social__link" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li class="social">
+                    <a href="#" class="social__link" target="_blank"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li class="social">
+                    <a href="#" class="social__link" target="_blank"><i class="fab fa-google-plus-g"></i></a>
+                </li>
+                <li class="social">
+                    <a href="#" class="social__link" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+        <div class="container">
+
+            <div class="header__picture">
+                <img src="img/white-background-2.jpg" alt="Profile" class="header__img">
+            </div>
+            <div class="header__info">
+                <h1>free portfolio PSD template <br> FOR GRAPHIC designerS</h1>
+                <div class="header__text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti excepturi sint amet consectetur
+                    at? Consectetur similique, libero voluptatum officiis dolor accusantium unde accusamus harum sint.
+                </div>
+                <button class="btn">Hire me</button>
+            </div>
+
+            <a href="#main" class="scroll">
+                <svg width="32" height="32">
+                    <use xlink:href="#scroll"></use>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section__wrap section__wrap--about">
+                <h2 class="section__title">About Me</h2>
+                <p class="section__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about_me" class="about_me">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis<br /> nostrud exercitation ullamco laboris nisi ut
+                aliquip
+                ex
+                ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit<br />
+                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                culpa
+                qui officia </p>
+        </div>
+    </section>
+
     <div class="expert-in">
         <div class="container">
             <h2 class="expert-in__h2">Expert In</h2>
@@ -46,5 +130,82 @@
             </div>
         </div>
     </div>
+
+
+    <footer class="footer gradient">
+        <div class="container">
+            <div class="footer__row">
+                <div class="footer__text">
+                    <span>Need a graphic designer? </span>
+                    <b>Ready to work!</b>
+                </div>
+                <button class="btn">hire me</button>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+
+
+    <div class="hire-me-pop-up">
+        <input id="close" type="checkbox">
+        <label class="close" for="close">
+            <svg viewBox="0 0 329.26933 329" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0" />
+            </svg>
+        </label>
+
+        <div class="wrap">
+            <div class="modal">
+                <div class="modal__title">Hire Me</div>
+                <form action="" class="modal__form" autocomplete="off" method="POST">
+                    <input type="text" name="user-name" id="user-name" placeholder="Your Name" required>
+                    <input type="email" name="user-email" id="user-email" placeholder="Your E-Mail" required>
+                    <textarea name="user-comment" id="user-comment" placeholder="Your Message" cols="30"
+                        rows="10"></textarea>
+                    <label for="user-submit">
+                        <input class="btn btn--sm btn--modal" value="SEND MESSAGE" id="user-submit" type="submit">
+                    </label>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <svg style="display: none;">
+        <symbol x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" id="scroll">
+
+            <path d="M440.437,301.781L266.656,475.584V10.667C266.656,4.776,261.88,0,255.989,0
+    	c-5.891,0-10.667,4.776-10.667,10.667v464.917L71.541,301.781c-4.237-4.093-10.99-3.975-15.083,0.262
+    	c-3.992,4.134-3.992,10.687,0,14.82l192,192c4.16,4.171,10.914,4.179,15.085,0.019c0.006-0.006,0.013-0.013,0.019-0.019l192-192
+    	c4.093-4.237,3.975-10.99-0.262-15.083c-4.134-3.993-10.687-3.993-14.821,0L440.437,301.781z" />
+            <path d="M255.989,512c-2.831,0.005-5.548-1.115-7.552-3.115l-192-192c-4.093-4.237-3.975-10.99,0.262-15.083
+    	c4.134-3.992,10.687-3.992,14.82,0l184.469,184.448l184.448-184.448c4.237-4.093,10.99-3.975,15.083,0.262
+    	c3.993,4.134,3.993,10.687,0,14.821l-192,192C261.521,510.879,258.813,511.999,255.989,512z" />
+            <path d="M255.989,512c-5.891,0-10.667-4.776-10.667-10.667V10.667C245.323,4.776,250.098,0,255.989,0
+    	c5.891,0,10.667,4.776,10.667,10.667v490.667C266.656,507.224,261.88,512,255.989,512z" />
+        </symbol>
+
+        <symbol height="32px" viewBox="0 -53 384 384" width="32px" id="menu">
+            <path
+                d="m368 154.667969h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0" />
+            <path
+                d="m368 32h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0" />
+            <path
+                d="m368 277.332031h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0" />
+        </symbol>
+    </svg>
+
+    <script>
+        function closeMenu(){
+            document.querySelector('#toggler').click();
+        }
+    </script>
 </body>
+
 </html>
