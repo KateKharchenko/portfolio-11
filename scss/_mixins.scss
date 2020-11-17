@@ -6,8 +6,8 @@
     }
 }
 
-@mixin madia ($w) {
-    @media screen and (max-width: $w) {
+@mixin media($w) {
+    @media screen and (max-width: $w){
         @content;
     }
 }
