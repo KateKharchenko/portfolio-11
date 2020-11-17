@@ -1,0 +1,35 @@
+.section{
+    &__wrap{
+        padding: 85px 40px;
+        @include media(768px){
+            padding: 45px 20px;
+        }
+        @include media(576px){
+            padding: 25px 10px;
+        }       
+            &--about{
+                background-color: $white;               
+            }
+    }
+    &__title{
+        color: $title-color;
+        font-size: 5rem;
+        @include media(768px){
+            font-size: 4rem;
+        }
+        @include media(576px){
+            font-size: 3.5rem;
+        }
+    }
+    &__text{
+        color: $text-color;
+        font-size: 1.6rem;
+        text-align: center;
+        
+        @include media(576px){
+            line-height: 2;
+            font-size: 1.9rem;
+            line-height: 2.2;
+        } 
+    }
+}
